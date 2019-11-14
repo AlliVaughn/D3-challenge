@@ -1,0 +1,150 @@
+
+ /* Pallatte	
+#F16434 // orange
+#20BDC3 //aqua
+#133746  //dark-bluegreen
+#F9C834  //yellow
+#389FCB  //med-blue
+#2B5671 //highlight-background-blue
+#408D94 //grey-green-blue 
+ */
+ #my-corr > h3{ 
+   color: #F9C834; 
+ }
+ body > nav > h4{
+   color: whitesmoke; 
+   padding-top: 10px; 
+ }
+.navbar-dark .navbar-brand {
+  color: #F16434;
+} 
+body{
+  background: #EFEF; 
+}
+ svg{ 
+   background-color:#EFEF;   
+ }
+ #corr{
+    background-color:#133746;
+    color:white;  
+    margin-top:100px; 
+} 
+  #my-corr { 
+    margin-left: 40px; 
+  } 
+  
+ .chart::before {
+  position: absolute; 
+  top: 50px;
+  left: 300px;
+  z-index: -1;
+  display: block;
+  width: 400px;
+  height: 300px;
+  content: " ";
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  opacity: 0.3;
+}
+/* .chart {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+} */
+
+.axis-text {
+  font-family: sans-serif;
+  text-anchor: middle;
+}
+
+.active {
+  font-weight: bold;
+  color: #000;
+  fill:#20BDC3 ;
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.inactive {
+  font-weight: bold;
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.change {
+  font-weight: bold;
+  fill:#20BDC3 ;
+}
+
+.unchange {
+  font-weight: bold;
+  fill: #000;
+}
+
+.inactive:hover {
+  fill:#F16434 ;
+  cursor: pointer;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  /* pointer in the center*/ 
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.circle:hover {
+  fill:#F16434  ;
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Padding bottom by footer height */
+  padding-bottom: 80px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* Set the fixed height of the footer here */
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+#footer p {
+  margin: 0;
+  font-size: 16px;
+}

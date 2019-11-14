@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>D3Times</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+</head>
+<body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <a class="navbar-brand" href="#"><h1> Correlation Today</h1></a>
+                <h4>Links Discovered: Lack of Insurance & Obesity  |  Poverty & Smoking</h4>
+              
+        </nav>
+	
+            <div class="container-fluid">
+                
+                    
+                <div class="row">
+                <div class="col-xs-12 col-md-12">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                        <iframe class="chart" src="d3_chart" style="height:600px;width:1140px;border: 0"></iframe>
+                  <div class="chart"></div> 
+                </div>
+              </div>
+              
+                <div class="row" id ="corr">
+
+                    <div class="col-xs-12  ">
+                        <div class="article"id="my-corr">
+                            <p><h3>Income vs Age</h3>
+                            These two data points do not have a strong correlation.</p>
+                            <p><h3>Percent Obese vs Percent of Population Without Heathcare</h3>
+                            States with a higher population of uncovered residents experience higher rates of obesity.</p>
+                            <p><h3>Percent in Poverty vs Percent who Smoke</h3>
+                            States with a higher population of impoverished residents experience higher rates of smoking amongst residents.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!-- Footer-->
+        <div id="footer">
+          <p>Data Analysis & Visualization Bootcamp @ UT-Austin &copy;2019</p>
+        </div>
+        <script src="{{url_for('static',filename='js/responsify.js')}}"></script>
+        <script src="{{url_for('static',filename='js/app.js')}}"></script>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+      
+     </body>
+</html>
